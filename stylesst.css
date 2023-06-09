@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 20px;
+}
+
+body{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.navigation{
+    position: fixed;
+    height: 700px;
+    width: 80px;
+    background: #0F056B;
+    box-shadow: 10px 0 0 #fff;
+    border-left: 10px solid #0F056B;
+    overflow-x: hidden;
+    transition: width 0.5s;
+    left: 0;
+    margin-top: -565px;
+}
+
+.navigation:hover{
+    width: 300px;
+}
+
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px ;
+}
+
+.navigation ul li.active{
+    background: #fff;
+}
+
+.navigation ul li a{
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation ul li.active a{
+    color: #333;
+}
+
+.navigation ul li.active a::before{
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #0F056B;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 #fff;
+}
+
+.navigation ul li.active a::after{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #0F056B;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 #fff;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    flex-shrink: 0;
+    transform: translateY(6px);
+}
+
+.navigation ul li a .icon ion-icon{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding-left: 20px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.navigation ul li a:hover .title{
+    width: auto;
+    padding: 0 20px;
+}
+
+.icon{
+    margin-right: -10px;
+}
+.logo {
+    position: absolute;
+    top: -100px;
+    left: 650px;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 15px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.title p {
+    top: 80px;
+    left: 50px;
+}
+
+.card{
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border-top: 1px solid rgb(125,125,125);
+    border-left: 1px solid rgb(125,125,125);
+    box-shadow: 5px 5px 0 lightgray;
+    margin-left: 250px;
+    margin-right: 100px;
+    margin-bottom: 120px;
+    margin-top: -500px;
+}
+
+.card2{
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border-top: 1px solid rgb(125,125,125);
+    border-left: 1px solid rgb(125,125,125);
+    box-shadow: 5px 5px 0 lightgray;
+    margin-right: 100px;
+    margin-bottom: 120px;
+    margin-top: -500px;
+}
+
+.card3{
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border-top: 1px solid rgb(125,125,125);
+    border-left: 1px solid rgb(125,125,125);
+    box-shadow: 5px 5px 0 lightgray;
+    margin-right: 100px;
+    margin-bottom: 120px;
+    margin-top: -500px;
+}
+
+.card4{
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border-top: 1px solid rgb(125,125,125);
+    border-left: 1px solid rgb(125,125,125);
+    box-shadow: 5px 5px 0 lightgray;
+    margin-right: 100px;
+    margin-bottom: 120px;
+    margin-top: -500px;
+}
+
+.card .content,
+.card2 .content2,
+.card3 .content3,
+.card4 .content4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.card .content .picture,
+.card2 .content2 .picture,
+.card4 .content4 .picture{
+    width: 100px;
+    height: 100px;
+    margin-right: -20px;
+    margin-bottom: 10px;
+}
+
+.card3 .content3 .picture{
+    width: 100px;
+    height: 100px;
+    margin-right: -20px;
+    margin-bottom: 30px;
+    margin-top: -80px;
+}
+
+.card .content .picture img,
+.card2 .content2 .picture img,
+.card3 .content3 .picture img,
+.card4 .content4 .picture img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .content h1,
+.card2 .content2 h1,
+.card4 .content4 h1{
+    font-size: 20px;
+    margin-right: -20px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.card3 .content3 h1{
+    font-size: 20px;
+    margin-right: -20px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.card .content p,
+.card2 .content2 p,
+.card4 .content4 p{
+    color: black;
+    text-decoration: none;
+    margin-right: -20px;
+}
+
+.card3 .content3 p{
+    color: black;
+    text-decoration: none;
+    margin-right: -20px;
+}
+.card .content a,
+.card2 .content2 a,
+.card3 .content3 a,
+.card4 .content4 a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 500;
+    background: linear-gradient(to top, #0F056B,#130686);
+    width: 100px;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 40px;
+    box-shadow: 0 0 5px 5px #130686;
+    margin-right: -20px;
+}
+
+/*carte explication*/
+.card_explication{
+    height: 350px;
+    width: 900px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border-top: 1px solid rgb(125,125,125);
+    border-left: 1px solid rgb(125,125,125);
+    box-shadow: 5px 5px 0 lightgray;
+    margin-right: 0px;
+    margin-top: 110px;
+    margin-bottom: 15px;
+}
+
+.card_explication .content_explication{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.card_explication .content_explication h1{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.card_explication .content_explication p{
+    color: black;
+    text-decoration: none;
+}
+
+/*carte matériel*/
+.card_materiel{
+    height: 350px;
+    width: 1300px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border-top: 1px solid rgb(125,125,125);
+    border-left: 1px solid rgb(125,125,125);
+    box-shadow: 5px 5px 0 lightgray;
+    margin-left: -1295px;
+    margin-right: 0px;
+    margin-top: 900px;
+    margin-bottom: 15px;
+    position: relative;
+    /*top: 355px;*/
+}
+
+.card_materiel .content_materiel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.card_materiel .content_materiel h1{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.card_materiel .content_materiel p{
+    color: black;
+    text-decoration: none;
+}
+
+/*Caroussel bloc explication*/
+.slider_explication{
+    width: 375px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 105px;
+    margin-left: -1250px;
+}
+.slides_explication{
+    width: 500px;
+    height: 500px;
+    display: flex;
+}
+.slides_explication input{
+    display: none;
+}
+.slide_explication{
+    width: 150%;
+    transition: 2s;
+}
+.slide_explication img{
+    width: 800px;
+    height: 500px;
+}
+#clique1:checked ~ .first{
+    margin-left: 0;
+}
+#clique2:checked ~ .first{
+    margin-left: -160%;
+}
+#clique3:checked ~ .first{
+    margin-left: -310%;
+}
+#clique4:checked ~ .first{
+    margin-left: -470%;
+}
+
+/*css for automatic navigation*/
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}

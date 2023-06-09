@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title> RCE Formation</title>
+    <link rel="stylesheet" href="styleincendie.css">
+    <script type="text/javascript" src="incendie.js"></script>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <div class="navigation">
+        <ul>
+            <li class="list">
+                <a href="accueil.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="title">Accueil</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="sst.html">
+                    <span class="icon">
+                        <ion-icon name="medkit-outline"></ion-icon>
+                    </span>
+                    <span class="title">SST</span>
+                </a>
+            </li>
+            <li class="list active">
+                <a href="incendie.html">
+                    <span class="icon">
+                        <ion-icon name="flame-outline"></ion-icon>
+                    </span>
+                    <span class="title">Incendie</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="gesteposture.html">
+                    <span class="icon">
+                        <ion-icon name="body-outline"></ion-icon>
+                    </span>
+                    <span class="title">Geste et posture</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="quizz.html">
+                    <span class="icon">
+                        <ion-icon name="reader-outline"></ion-icon>
+                    </span>
+                    <span class="title">Quizz</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="conception.html">
+                    <span class="icon">
+                        <ion-icon name="construct-outline"></ion-icon>
+                    </span>
+                    <span class="title">Conception de formation</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="contact.html">
+                    <span class="icon">
+                        <ion-icon name="at-outline"></ion-icon>
+                    </span>
+                    <span class="title">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!--<script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink));
+    </script>-->
+
+    <div class="card">
+        <div class="content">
+            <div class="picture">
+                <img src="logoSST.png">
+            </div>
+            <h1>Nom</h1>
+            <p>Incendie</p>
+            <a href="https://www.inrs.fr/services/formation/publics/sauveteur-secouriste.html#:~:text=Le%20sauveteur%20secouriste%20du%20travail,risques%20professionnels%20dans%20son%20entreprise."> En savoir plus</a>
+        </div>
+    </div>
+    <div class="card2">
+        <div class="content2">
+            <div class="picture">
+                <img src="horloge.png">
+            </div>
+            <h1>Durée</h1>
+            <p>14 heures</p>
+            <a href="https://www.inrs.fr/services/formation/faq.html#77969169-225b-4fae-91a9-fcee083ea17e"> En savoir plus</a>
+        </div>
+    </div>
+    <div class="card3">
+        <div class="content3">
+            <div class="picture">
+                <img src="groupe.png">
+            </div>
+            <h1>Nbr pers</h1>
+            <p>4 à 10 apprenants</p>
+            <!--<a href="https://www.inrs.fr/services/formation/faq.html#73a49f1e-4057-4f29-9239-7d37eaff6daa"> En savoir plus</a>-->
+        </div>
+    </div>
+    <div class="card4">
+        <div class="content4">
+            <div class="picture">
+                <img src="legal.png">
+            </div>
+            <h1>Légal</h1>
+            <p>Nbr minimum</p>
+            <a href="https://www.inrs.fr/services/formation/faq.html#73a49f1e-4057-4f29-9239-7d37eaff6daa"> En savoir plus</a>
+        </div>
+    </div>
+
+
+   <!--caroussel-->
+    <!--image slider start-->
+    <div class="slider_explication">
+        <div class="slides_explication">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="clique1">
+            <input type="radio" name="radio-btn" id="clique2">
+            <input type="radio" name="radio-btn" id="clique3">
+            <input type="radio" name="radio-btn" id="clique4">
+            <!--radio buttons end-->
+            <!--slide images start-->
+            <div class="slide_explication first">
+                <img src="secourismecaroussel1.png" alt="">
+            </div>
+            <div class="slide_explication">
+                <img src="secourismecaroussel2.jpeg" alt="">
+            </div>
+            <div class="slide_explication">
+                <img src="secourismecaroussel3.jpg" alt="">
+            </div>
+            <div class="slide_explication">
+                <img src="secourismecaroussel4.jpg" alt="">
+            </div>
+            <!--slide images end-->
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!--automatic navigation end-->
+        </div>
+    </div>
+    <!--image slider end-->
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('clique' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+
+    <div class="card_explication">
+        <div class="content_explication">
+            <h1>Explication de la formation </h1>
+            <p>Lorem ipsum dolor sit amet. 33 voluptatem possimus 33 quaerat dolor sed doloribus perferendis. Est magni molestiae et fugit vitae et voluptatem sint eum maxime iste sed nostrum recusandae et 
+                consectetur porro. </p><p>Et nihil sunt et atque similique 33 fuga necessitatibus et quidem debitis aut possimus voluptatem At obcaecati quam. Qui labore dicta et recusandae velit ad illo dolores
+                in incidunt nulla ut molestiae eveniet? Eos libero libero sit aperiam harum et nostrum dolorem sed minus nobis. </p><p>Sit dolore ipsum est totam optio et debitis unde sit iste temporibus est
+                minus incidunt vel nobis nihil. Non praesentium facilis ea reiciendis rerum ad unde reiciendis sit excepturi magnam cum asperiores fugiat. Et assumenda omnis ad quia ratione sit nihil 
+                voluptatem cum nostrum eius vel dolores repellat eum unde quia est blanditiis sequi. Nam numquam repudiandae 33 quasi consequatur nam fuga nemo vel harum veniam aut eveniet quidem ea
+                repudiandae corrupti. </p>
+        </div>
+    </div>
+
+    <div class="card_materiel">
+        <div class="content_materiel">
+            <h1>Matériel utilisé pendant la formation </h1>
+            <p>Lorem ipsum dolor sit amet. 33 voluptatem possimus 33 quaerat dolor sed doloribus perferendis. Est magni molestiae et fugit vitae et voluptatem sint eum maxime iste sed nostrum recusandae et 
+                consectetur porro. </p><p>Et nihil sunt et atque similique 33 fuga necessitatibus et quidem debitis aut possimus voluptatem At obcaecati quam. Qui labore dicta et recusandae velit ad illo dolores
+                in incidunt nulla ut molestiae eveniet? Eos libero libero sit aperiam harum et nostrum dolorem sed minus nobis. </p><p>Sit dolore ipsum est totam optio et debitis unde sit iste temporibus est
+                minus incidunt vel nobis nihil. Non praesentium facilis ea reiciendis rerum ad unde reiciendis sit excepturi magnam cum asperiores fugiat. Et assumenda omnis ad quia ratione sit nihil 
+                voluptatem cum nostrum eius vel dolores repellat eum unde quia est blanditiis sequi. Nam numquam repudiandae 33 quasi consequatur nam fuga nemo vel harum veniam aut eveniet quidem ea
+                repudiandae corrupti. </p>
+        </div>
+    </div>
+</body>
+</html>

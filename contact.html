@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title> RCE Formation</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <div class="navigation">
+        <ul>
+            <li class="list">
+                <a href="accueil.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="title">Accueil</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="sst.html">
+                    <span class="icon">
+                        <ion-icon name="medkit-outline"></ion-icon>
+                    </span>
+                    <span class="title">SST</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="incendie.html">
+                    <span class="icon">
+                        <ion-icon name="flame-outline"></ion-icon>
+                    </span>
+                    <span class="title">Incendie</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="gesteposture.html">
+                    <span class="icon">
+                        <ion-icon name="body-outline"></ion-icon>
+
+                    </span>
+                    <span class="title">Geste et posture</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="quizz.html">
+                    <span class="icon">
+                        <ion-icon name="reader-outline"></ion-icon>
+                    </span>
+                    <span class="title">Quizz</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="conception.html">
+                    <span class="icon">
+                        <ion-icon name="construct-outline"></ion-icon>
+                    </span>
+                    <span class="title">Conception de formation</span>
+                </a>
+            </li>
+            <li class="list active">
+                <a href="contact.html">
+                    <span class="icon">
+                        <ion-icon name="at-outline"></ion-icon>
+                    </span>
+                    <span class="title">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <div class="container">
+            <h1>Contactez-nous</h1>
+            <!--<h2>de contact</h2>-->
+            <div class="tel">
+                <p>Téléphone : 06.67.41.83.71</p>
+            </div>
+            <div class="mail">
+                <p>E-mail : rceformation@gmail.com</p>
+            </div>
+            <div class="adresse">
+                <p>Adresse : 1 rue de la fontaine 28170 TREMBLAY-LES-VILLAGES</p>
+            </div>
+            <div class="box">
+                <div class="name">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="text" placeholder="Nom" id="name">
+                </div>
+                <div class="prenom">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="text" placeholder="Prénom" id="prenom">
+                </div>
+                <div class="mail">
+                    <ion-icon name="at-outline"></ion-icon>
+                    <input type="text" placeholder="E-mail" id="mail">
+                </div>
+                <div class="message-box">
+                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                    <textarea id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+                <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                <div class="button">
+                    <button id="send" onclick="message()">Envoyer</button>
+                </div>
+                <div class="message">
+                    <div class="success" id="success"> Votre message a été envoyé avec succès</div>
+                    <div class="danger" id="danger">Feilds can't be empty</div>
+                </div>
+            </div>
+    </div>
+    <div class="container2">
+        <h2>Avis clients </h2>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title> RCE Formation</title>
+        <link rel="stylesheet" href="stylequizz.css">
+    </head>
+    <body>
+        <div class="box" id="questionScreen">
+            <div class="titre">
+                Online Quiz Application
+            </div>
+
+            <div class="header">
+                <div class="scoreBox">Score : <span>0</span></div>
+                <div class="timerBox">Time Left : <span></span></div>
+            </div>
+
+            <div class="questionBox">
+                Comment tu t'appelle ?
+            </div>
+
+            <div class="optionBox">
+                <span onclick="checkAnswer(this)" data-opt="1">Marie</span>
+                <span onclick="checkAnswer(this)" data-opt="2">Lisa</span>
+                <span onclick="checkAnswer(this)" data-opt="3">Sarah</span>
+                <span onclick="checkAnswer(this)" data-opt="4">Sophia</span>
+            </div>
+
+
+            <div class="footer">
+                <button>
+                    Next
+                </button>
+                <button>
+                    Show result
+                </button>
+            </div>
+        </div>
+
+        <div class="box" id="resultScreen" style="display: none;">
+            <div class="titre">
+                Online Quiz Result
+            </div>
+
+            <div class="resultBox">
+                <label>Questions : </label>
+                <span id="totalQuestion ">10</span>
+                <label>Attempt : </label>
+                <span id="attempsQuestion ">1</span>
+                <label>Correct : </label>
+                <span id="correctAnswers ">1</span>
+                <label>Wrong : </label>
+                <span id="wrongAnswers ">1</span>
+            </div>
+
+            <div class="buttonBox">
+                <a href="quizz.html">Start</a>
+            </div>
+        </div>
+    </body>
+    <script src="js/query-3.5.1.min.js"></script>
+    <script src="js/quizz.js"></script>
+    <script src="js/script.js"></script>
+</html>

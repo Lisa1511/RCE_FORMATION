@@ -1,0 +1,97 @@
+html{
+    margin:0;
+    padding:0;
+    background-color: #91b4e8;
+}
+
+main{
+    width: 70%;
+    height: 80%;
+    background-color: white;
+    opacity: 0.9;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+.imgContent{
+    width: 60%;
+    height: 50%;
+    background-image: url('../formation.png');
+    background-size: cover;
+    border-radius: 10px 10px;
+}
+.img{
+    margin-top: 95px;
+    margin-left: 80px;
+    width: 80px;
+    height: 80px;
+}
+
+.loginForm{
+    width: 40%;
+    height: 100%;
+    background-color:#e5f1fe;
+    border-radius: 0px 10px 10px 0px;
+    
+}
+.loginForm h2{
+    color: #6a75b9;
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+}
+form{
+    margin-left: 40px;
+    margin-top: 20%;
+}
+form input{
+    width: 80%;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: white;
+    font-size: 14px;
+    color: gray;
+    font-family: 'Montserrat',sans-serif;
+    
+}
+form input:hover{
+    border:#6a75b9 2px solid;
+}
+form button{
+    width: 85%;
+    margin: 10px;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    color: white;
+    background-color: #6a75b9;
+    cursor: pointer;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+    
+}
+form a{
+    text-decoration: none;
+
+}
+form .forgotText a{
+    color: gray;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+}
+
+form .registerText a{
+    color:#6a75b9;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+    
+}
